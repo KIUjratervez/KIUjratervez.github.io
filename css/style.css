@@ -1,0 +1,115 @@
+@font-face {
+    src: url(/fonts/tiza.ttf);
+    font-family: myTiza;
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.cim_text{
+    font: 65px myTiza, sans-serif;
+    color: rgb(207, 161, 24);
+    margin: 0;
+}
+
+.cim_text_reflect{
+    font: 65px myTiza, sans-serif;
+    color: rgb(207, 161, 24);
+    margin: -15px 0;
+    transform: scaleY(-1);
+    -webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent),
+    color-stop(20%, transparent), to(rgba(0,0,0,.2)));
+}
+
+body{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font: 15px myTiza, sans-serif;
+    color: rgb(207, 161, 24);
+}
+
+nav ul{
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    padding: 0 50px 0 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(207, 161, 24);
+    padding: 8px;
+}
+
+nav a:hover{
+    color: black;
+    background-color: rgb(207, 161, 24);
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 95%;
+}
+
+.box-wrapper{
+    display: flex;
+}
+
+img{
+    max-height: 261px;
+}
+
+.box{
+    max-width: 306px;
+    border-style: solid;
+    margin: 0 auto;
+}
+
+.box:hover{
+    box-shadow: 0 0 50px rgba(207, 161, 24, .3);
+}
+
+.box-content{
+    padding: 40px 20px;
+}
+
+h3{
+    margin: 0;
+}
+
+p{
+    font-size: 10px;
+    margin: 20px 0 40px 0;
+}
+
+h4{
+    margin: 20px 0 0 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: rgb(207, 161, 24);
+}
+
+.btn:hover{
+    box-shadow: 0 0 50px rgba(207, 161, 24, .3);
+    background-color: rgb(207, 161, 24);
+    color: black;
+}
